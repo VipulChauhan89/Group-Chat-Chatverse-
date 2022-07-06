@@ -7,7 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<body >
+<body>
     <div align="center">
         <div class="box" >
             <div>
@@ -16,20 +16,21 @@
                 <br>
                 <hr><hr>
                 <br>
-                <input type="email" class="inp" id="email" placeholder="Email" required>
-                <p>
-                    <input type="password" class="inp" id="password" placeholder="Password" required>
+                <form action="/login" method="POST">
+                    <input type="email" class="inp" id="email" placeholder="Email" required>
+                    <p>
+                        <input type="password" class="inp" id="password" placeholder="Password" required>
                         <i id="hide" class="bi bi-eye" onclick="hide()"></i>
-                </p>
-                <br>
-                <input type="button" class="log" value="Log in">
+                    </p>
+                    <br>
+                    <input type="submit" class="log" value="Log in">
+                </form>
             </div>
             <br>
             <br>
             <br>
         </div>
     </div>
-    <script src="login.js"></script>
-    <script src="../index.js"></script>
+    <script src="log.js"></script>
 </body>
 </html>
