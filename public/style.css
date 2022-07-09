@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 body{
-    background:url("/Background/Background.png");
+    background:url("../Background/Background.png");
     background-repeat: no-repeat;
     position:relative;
     background-attachment: fixed;
@@ -8,7 +8,7 @@ body{
     margin:0px;
 }
 .box{
-    margin-top: 70px;
+    margin-top: 50px;
     width: fit-content;
     border-color: black;
     background-color: rgb(251, 247, 247);
