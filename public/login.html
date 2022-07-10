@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body >
+    <div align="center">
+        <div class="box" >
+            <div>
+                <form action="/log_in" method="POST">
+                    <img src="/logo/ChatverseLogo.png" id="logo">
+                    <p>"Choose your words wisely.</p> <p>The fate of the chatverse may depend on it."</p>
+                    <br>
+                    <hr><hr>
+                    <br>
+                    <input type="email" class="inp" id="email" name="email" placeholder="Email" required>
+                    <p>
+                        <input type="password" class="inp" id="password" name="password" placeholder="Password" required>
+                        <i id="hide" class="bi bi-eye" onclick="hide()"></i>
+                    </p>
+                    <br>
+                    <input type="submit" class="log" id="submit" value="Log in">
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+            </div>
+        </div>
+        <script src="pass.js"></script>
+</body>
+</html>
