@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div align="center">
+
+        <div class="box">
+            <form action="/sign_up" method="POST">
+                <img src="/logo/ChatverseLogo.png" id="logo">
+                <p>"Choose your words wisely.</p> <p>The fate of the chatverse may depend on it."</p>
+                <br>
+                <hr><hr>
+                <h1>Sign Up</h1>
+                <input type="text" class="inp" id="fname" name="fname" placeholder="First Name" required />
+                <br>
+                <input type="text" class="inp" id="lname" name="lname" placeholder="Last name" required />
+                <br>
+                <input type="email" class="inp" id="email" name="email" placeholder="Email" required />
+                <br>
+                <p>
+                    <input type="password" class="inp" id="password" name="password" placeholder="Password" required />
+                    <i id="hide" class="bi bi-eye" onclick="hide()"></i>
+                </p>
+                <br>
+                <input type="submit" value="Register" id="submit" class="reg"/>
+                <br>
+                <br>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="pass.js"></script>
+</body>
+
+</html>
