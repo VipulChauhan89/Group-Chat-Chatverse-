@@ -125,6 +125,8 @@ body{
     background: #fff;
     box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.05);
     padding: 5px;
+    padding:5px 20px;
+    border-radius: 5px;
 }
 .chat-screen .messages .message.my-message{
     justify-content: flex-end;
