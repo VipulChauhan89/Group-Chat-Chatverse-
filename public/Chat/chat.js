@@ -1,9 +1,9 @@
+const socket = io();
+let uname;
+let room;
+let room_pass;
 (function(){
     const app = document.querySelector(".app");
-    const socket = io();
-    let uname;
-    let room;
-    let room_pass;
     app.querySelector(".join-screen #join-user").addEventListener("click",function(){
         let username = app.querySelector(".join-screen #username").value;
         room = app.querySelector(".join-screen #room").value;
@@ -76,7 +76,7 @@
             let msg=document.createElement("div");
             msg.setAttribute("class","message my-message");
             msg.innerHTML=`
-                <div>
+                <div style="background-color:#128C7E">
                     <div class="name">You</div>
                     <div class="text">${message.text}</div>
                 </div>
@@ -117,4 +117,5 @@ function Back()
     app.querySelector(".join-screen #room").value="";
     app.querySelector(".join-screen #room-pass").value="";
     app.querySelector(".chat-screen .messages").innerHTML="";
+    socket.emit("exituser",uname,room,room_pass);
 }
